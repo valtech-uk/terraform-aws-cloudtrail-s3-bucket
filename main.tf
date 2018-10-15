@@ -64,6 +64,7 @@ module "s3_bucket" {
   force_destroy          = "${var.force_destroy}"
   versioning_enabled     = "true"
   lifecycle_rule_enabled = "false"
+  kms_master_key_id      = "${var.kms_master_key_id}"
   delimiter              = "${var.delimiter}"
   attributes             = "${var.attributes}"
   tags                   = "${var.tags}"
